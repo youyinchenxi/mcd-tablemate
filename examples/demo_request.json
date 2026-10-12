@@ -1,0 +1,13 @@
+{
+  "budget_fen": 8000,
+  "strategy": "balanced",
+  "quote_limit": 8,
+  "people": [
+    {"id": "lin", "name": "小林", "needs": {"main": 1, "drink": 1, "side": 0},
+     "exclude_tags": ["牛肉", "辣"], "must_tags": [], "prefer_tags": ["鸡肉"]},
+    {"id": "chen", "name": "小陈", "needs": {"main": 1, "drink": 1, "side": 0},
+     "exclude_tags": [], "must_tags": ["咖啡"], "prefer_tags": []},
+    {"id": "zhou", "name": "小周", "needs": {"main": 1, "drink": 1, "side": 1},
+     "exclude_tags": [], "must_tags": [], "prefer_tags": ["牛肉", "薯条"]}
+  ]
+}

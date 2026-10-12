@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ec">
+  <meta name="description" content="麦桌搭子：把大家的口味和预算，变成一份清楚的多人点餐清单。">
+  <title>麦桌搭子 · 一桌人的口味，一份点餐清单</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="麦桌搭子首页"><span class="brand-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>麦桌搭子<small>MCD TABLEMATE</small></span></a>
+    <span class="demo-label"><span aria-hidden="true"></span>模拟演示 · 非实时门店价格</span>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">LESS BACK AND FORTH. MORE TIME TOGETHER.</p><h1 id="hero-title">一桌人的口味，<br>一份<span>刚刚好的</span>清单。</h1><p class="intro">谁不吃牛肉，谁要咖啡，今天预算多少？<br>把需求放上桌，剩下的交给麦桌搭子。</p><div class="hero-notes"><span><b>01</b> 照顾每个人</span><span><b>02</b> 预算算清楚</span><span><b>03</b> 改口也没关系</span></div></div>
+      <div class="table-illustration" aria-hidden="true"><div class="table-shadow"></div><div class="table-top"><span class="table-ring"></span><span class="plate plate-one"><i></i><b></b></span><span class="plate plate-two"><i></i><b></b></span><span class="plate plate-three"><i></i><b></b></span><span class="cup cup-one"></span><span class="cup cup-two"></span><span class="cup cup-three"></span><div class="table-title">一起吃，<br>都合适。</div></div><span class="table-callout callout-one">阿青 / 不吃牛肉</span><span class="table-callout callout-two">小林 / 要一杯咖啡</span><span class="table-callout callout-three">3 人 · ¥80</span></div>
+    </section>
+    <section class="workspace" aria-label="多人点餐规划">
+      <form id="plan-form" class="setup-panel">
+        <div class="section-heading"><div><p class="eyebrow">YOUR TABLE</p><h2>今天，谁一起吃？</h2></div><button type="button" id="reset-demo" class="text-button">试试三人示例 <span aria-hidden="true">↺</span></button></div>
+        <p class="section-description">至少 2 人，最多 6 人。选出必须满足的需求，再告诉我们你的偏好。</p>
+        <div id="people-list" class="people-list"></div>
+        <button type="button" id="add-person" class="add-person"><span aria-hidden="true">＋</span> 加一位搭子</button>
+        <div class="plan-controls"><div class="budget-field"><label for="budget">这一桌的总预算</label><div class="money-input"><span aria-hidden="true">¥</span><input id="budget" type="number" inputmode="decimal" min="1" max="9999" step="0.01" value="80" required aria-describedby="budget-hint"></div><small id="budget-hint">以整桌合计计算</small></div><fieldset class="strategy-field"><legend>更在意什么？</legend><div class="strategy-options"><label><input type="radio" name="strategy" value="balanced" checked><span><b>照顾偏好</b><small>预算内，让每个人更满意</small></span></label><label><input type="radio" name="strategy" value="budget"><span><b>节省预算</b><small>满足必需，优先少花钱</small></span></label></div></fieldset></div>
+        <div class="submit-row"><p>清单会标明每个人吃什么，<br>所有金额均为模拟估算。</p><button id="generate" type="submit" class="primary-button"><span id="generate-label">帮我们搭一桌</span><span aria-hidden="true" class="button-arrow">↗</span></button></div>
+      </form>
+      <aside class="results-panel" aria-labelledby="results-title"><div class="section-heading"><div><p class="eyebrow">A PLAN FOR EVERYONE</p><h2 id="results-title">这一桌，安排好了</h2></div><span id="results-state" class="state-pill">等待搭配</span></div><div id="result-announcement" class="sr-only" role="status" aria-live="polite"></div><div id="results" class="results-container"><div class="empty-state"><span class="empty-illustration" aria-hidden="true"><i></i><b></b><em></em></span><h3>先把大家的需求放上桌</h3><p>点击「帮我们搭一桌」，<br>看看这份预算能照顾哪些口味。</p><div class="empty-example"><span>试着说：</span>“三个人，80 元，<br>一个不吃牛肉，一个要咖啡。”</div></div></div></aside>
+    </section>
+    <section class="how-it-works" aria-label="点餐说明"><div><span>01 / 需求</span><h3>必需先满足</h3><p>主食、饮料、配餐，以及排除的口味和必须的咖啡。</p></div><div><span>02 / 搭配</span><h3>预算里做选择</h3><p>比较可行组合，清楚列出每位搭子的餐品和花费。</p></div><div><span>03 / 调整</span><h3>改了就重新算</h3><p>需求一变，旧清单会标记待重算，不把旧结果当新方案。</p></div></section>
+  </main>
+  <footer><span>麦桌搭子 <span class="footer-divider">/</span> 给一起吃饭的人</span><p>独立开发的创意演示项目 · 与麦当劳官方应用无关联<br>模拟菜单用于演示协调流程，实际价格与供应情况以门店为准。</p></footer>
+</body>
+</html>

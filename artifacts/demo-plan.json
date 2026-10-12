@@ -1,0 +1,1258 @@
+{
+  "budget_fen": 8000,
+  "strategy": "balanced",
+  "price_source": "catalog_estimate",
+  "warnings": [
+    "Candidate search was bounded; results are feasible suggestions, not a proven global optimum.",
+    "Catalog prices are estimates; availability, discounts and final payable price require MCP verification."
+  ],
+  "search": {
+    "individual_nodes": 142,
+    "group_expansions": 15670,
+    "truncated": true
+  },
+  "unmet": [],
+  "status": "ok",
+  "candidates": [
+    {
+      "id": "candidate-1",
+      "assignments": [
+        {
+          "person_id": "lin",
+          "person_name": "小林",
+          "estimated_cost_fen": 2300,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-cola",
+              "name": "模拟可乐单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "鸡肉"
+          ]
+        },
+        {
+          "person_id": "chen",
+          "person_name": "小陈",
+          "estimated_cost_fen": 2400,
+          "offers": [
+            {
+              "id": "demo-spicy-chicken",
+              "name": "模拟辣鸡肉堡",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟辣鸡肉堡",
+              "category": "main",
+              "tags": [
+                "辣",
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": []
+        },
+        {
+          "person_id": "zhou",
+          "person_name": "小周",
+          "estimated_cost_fen": 2600,
+          "offers": [
+            {
+              "id": "demo-beef-set",
+              "name": "模拟牛肉套餐",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟牛肉堡",
+              "category": "main",
+              "tags": [
+                "牛肉"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟小薯条",
+              "category": "side",
+              "tags": [
+                "薯条"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "牛肉",
+            "薯条"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "demo-beef-set",
+          "quantity": 1
+        },
+        {
+          "id": "demo-chicken",
+          "quantity": 1
+        },
+        {
+          "id": "demo-coffee",
+          "quantity": 1
+        },
+        {
+          "id": "demo-cola",
+          "quantity": 1
+        },
+        {
+          "id": "demo-spicy-chicken",
+          "quantity": 1
+        }
+      ],
+      "estimated_total_fen": 7300,
+      "estimated_within_budget": true,
+      "score": 300,
+      "unmet": [],
+      "extras": []
+    },
+    {
+      "id": "candidate-2",
+      "assignments": [
+        {
+          "person_id": "lin",
+          "person_name": "小林",
+          "estimated_cost_fen": 2300,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-cola",
+              "name": "模拟可乐单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "鸡肉"
+          ]
+        },
+        {
+          "person_id": "chen",
+          "person_name": "小陈",
+          "estimated_cost_fen": 2550,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": []
+        },
+        {
+          "person_id": "zhou",
+          "person_name": "小周",
+          "estimated_cost_fen": 2600,
+          "offers": [
+            {
+              "id": "demo-beef-set",
+              "name": "模拟牛肉套餐",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟牛肉堡",
+              "category": "main",
+              "tags": [
+                "牛肉"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟小薯条",
+              "category": "side",
+              "tags": [
+                "薯条"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "牛肉",
+            "薯条"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "demo-beef-set",
+          "quantity": 1
+        },
+        {
+          "id": "demo-chicken",
+          "quantity": 2
+        },
+        {
+          "id": "demo-coffee",
+          "quantity": 1
+        },
+        {
+          "id": "demo-cola",
+          "quantity": 1
+        }
+      ],
+      "estimated_total_fen": 7450,
+      "estimated_within_budget": true,
+      "score": 300,
+      "unmet": [],
+      "extras": []
+    },
+    {
+      "id": "candidate-3",
+      "assignments": [
+        {
+          "person_id": "lin",
+          "person_name": "小林",
+          "estimated_cost_fen": 2300,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-cola",
+              "name": "模拟可乐单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "鸡肉"
+          ]
+        },
+        {
+          "person_id": "chen",
+          "person_name": "小陈",
+          "estimated_cost_fen": 2650,
+          "offers": [
+            {
+              "id": "demo-beef",
+              "name": "模拟牛肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟牛肉堡",
+              "category": "main",
+              "tags": [
+                "牛肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": []
+        },
+        {
+          "person_id": "zhou",
+          "person_name": "小周",
+          "estimated_cost_fen": 2600,
+          "offers": [
+            {
+              "id": "demo-beef-set",
+              "name": "模拟牛肉套餐",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟牛肉堡",
+              "category": "main",
+              "tags": [
+                "牛肉"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟小薯条",
+              "category": "side",
+              "tags": [
+                "薯条"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "牛肉",
+            "薯条"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "demo-beef",
+          "quantity": 1
+        },
+        {
+          "id": "demo-beef-set",
+          "quantity": 1
+        },
+        {
+          "id": "demo-chicken",
+          "quantity": 1
+        },
+        {
+          "id": "demo-coffee",
+          "quantity": 1
+        },
+        {
+          "id": "demo-cola",
+          "quantity": 1
+        }
+      ],
+      "estimated_total_fen": 7550,
+      "estimated_within_budget": true,
+      "score": 300,
+      "unmet": [],
+      "extras": []
+    },
+    {
+      "id": "candidate-4",
+      "assignments": [
+        {
+          "person_id": "lin",
+          "person_name": "小林",
+          "estimated_cost_fen": 2550,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "鸡肉"
+          ]
+        },
+        {
+          "person_id": "chen",
+          "person_name": "小陈",
+          "estimated_cost_fen": 2400,
+          "offers": [
+            {
+              "id": "demo-spicy-chicken",
+              "name": "模拟辣鸡肉堡",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟辣鸡肉堡",
+              "category": "main",
+              "tags": [
+                "辣",
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": []
+        },
+        {
+          "person_id": "zhou",
+          "person_name": "小周",
+          "estimated_cost_fen": 2600,
+          "offers": [
+            {
+              "id": "demo-beef-set",
+              "name": "模拟牛肉套餐",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟牛肉堡",
+              "category": "main",
+              "tags": [
+                "牛肉"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟小薯条",
+              "category": "side",
+              "tags": [
+                "薯条"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "牛肉",
+            "薯条"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "demo-beef-set",
+          "quantity": 1
+        },
+        {
+          "id": "demo-chicken",
+          "quantity": 1
+        },
+        {
+          "id": "demo-coffee",
+          "quantity": 2
+        },
+        {
+          "id": "demo-spicy-chicken",
+          "quantity": 1
+        }
+      ],
+      "estimated_total_fen": 7550,
+      "estimated_within_budget": true,
+      "score": 300,
+      "unmet": [],
+      "extras": []
+    },
+    {
+      "id": "candidate-5",
+      "assignments": [
+        {
+          "person_id": "lin",
+          "person_name": "小林",
+          "estimated_cost_fen": 2550,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "鸡肉"
+          ]
+        },
+        {
+          "person_id": "chen",
+          "person_name": "小陈",
+          "estimated_cost_fen": 2550,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": []
+        },
+        {
+          "person_id": "zhou",
+          "person_name": "小周",
+          "estimated_cost_fen": 2600,
+          "offers": [
+            {
+              "id": "demo-beef-set",
+              "name": "模拟牛肉套餐",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟牛肉堡",
+              "category": "main",
+              "tags": [
+                "牛肉"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟小薯条",
+              "category": "side",
+              "tags": [
+                "薯条"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "牛肉",
+            "薯条"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "demo-beef-set",
+          "quantity": 1
+        },
+        {
+          "id": "demo-chicken",
+          "quantity": 2
+        },
+        {
+          "id": "demo-coffee",
+          "quantity": 2
+        }
+      ],
+      "estimated_total_fen": 7700,
+      "estimated_within_budget": true,
+      "score": 300,
+      "unmet": [],
+      "extras": []
+    },
+    {
+      "id": "candidate-6",
+      "assignments": [
+        {
+          "person_id": "lin",
+          "person_name": "小林",
+          "estimated_cost_fen": 2550,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "鸡肉"
+          ]
+        },
+        {
+          "person_id": "chen",
+          "person_name": "小陈",
+          "estimated_cost_fen": 2650,
+          "offers": [
+            {
+              "id": "demo-beef",
+              "name": "模拟牛肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟牛肉堡",
+              "category": "main",
+              "tags": [
+                "牛肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": []
+        },
+        {
+          "person_id": "zhou",
+          "person_name": "小周",
+          "estimated_cost_fen": 2600,
+          "offers": [
+            {
+              "id": "demo-beef-set",
+              "name": "模拟牛肉套餐",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟牛肉堡",
+              "category": "main",
+              "tags": [
+                "牛肉"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟小薯条",
+              "category": "side",
+              "tags": [
+                "薯条"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "牛肉",
+            "薯条"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "demo-beef",
+          "quantity": 1
+        },
+        {
+          "id": "demo-beef-set",
+          "quantity": 1
+        },
+        {
+          "id": "demo-chicken",
+          "quantity": 1
+        },
+        {
+          "id": "demo-coffee",
+          "quantity": 2
+        }
+      ],
+      "estimated_total_fen": 7800,
+      "estimated_within_budget": true,
+      "score": 300,
+      "unmet": [],
+      "extras": []
+    },
+    {
+      "id": "candidate-7",
+      "assignments": [
+        {
+          "person_id": "lin",
+          "person_name": "小林",
+          "estimated_cost_fen": 2300,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-cola",
+              "name": "模拟可乐单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "鸡肉"
+          ]
+        },
+        {
+          "person_id": "chen",
+          "person_name": "小陈",
+          "estimated_cost_fen": 2550,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": []
+        },
+        {
+          "person_id": "zhou",
+          "person_name": "小周",
+          "estimated_cost_fen": 3200,
+          "offers": [
+            {
+              "id": "demo-beef",
+              "name": "模拟牛肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-cola",
+              "name": "模拟可乐单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-fries",
+              "name": "模拟小薯条单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟小薯条",
+              "category": "side",
+              "tags": [
+                "薯条"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟牛肉堡",
+              "category": "main",
+              "tags": [
+                "牛肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "牛肉",
+            "薯条"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "demo-beef",
+          "quantity": 1
+        },
+        {
+          "id": "demo-chicken",
+          "quantity": 2
+        },
+        {
+          "id": "demo-coffee",
+          "quantity": 1
+        },
+        {
+          "id": "demo-cola",
+          "quantity": 2
+        },
+        {
+          "id": "demo-fries",
+          "quantity": 1
+        }
+      ],
+      "estimated_total_fen": 8050,
+      "estimated_within_budget": false,
+      "score": 300,
+      "unmet": [],
+      "extras": []
+    },
+    {
+      "id": "candidate-8",
+      "assignments": [
+        {
+          "person_id": "lin",
+          "person_name": "小林",
+          "estimated_cost_fen": 2300,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-cola",
+              "name": "模拟可乐单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟可乐",
+              "category": "drink",
+              "tags": [
+                "冷饮",
+                "可乐"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "鸡肉"
+          ]
+        },
+        {
+          "person_id": "chen",
+          "person_name": "小陈",
+          "estimated_cost_fen": 2400,
+          "offers": [
+            {
+              "id": "demo-spicy-chicken",
+              "name": "模拟辣鸡肉堡",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟辣鸡肉堡",
+              "category": "main",
+              "tags": [
+                "辣",
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": []
+        },
+        {
+          "person_id": "zhou",
+          "person_name": "小周",
+          "estimated_cost_fen": 3350,
+          "offers": [
+            {
+              "id": "demo-chicken",
+              "name": "模拟鸡肉堡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-coffee",
+              "name": "模拟美式咖啡单点",
+              "quantity": 1
+            },
+            {
+              "id": "demo-fries",
+              "name": "模拟小薯条单点",
+              "quantity": 1
+            }
+          ],
+          "components": [
+            {
+              "name": "模拟小薯条",
+              "category": "side",
+              "tags": [
+                "薯条"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟美式咖啡",
+              "category": "drink",
+              "tags": [
+                "咖啡",
+                "热饮"
+              ],
+              "quantity": 1
+            },
+            {
+              "name": "模拟鸡肉堡",
+              "category": "main",
+              "tags": [
+                "鸡肉"
+              ],
+              "quantity": 1
+            }
+          ],
+          "extras": [],
+          "preference_hits": [
+            "薯条"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "demo-chicken",
+          "quantity": 2
+        },
+        {
+          "id": "demo-coffee",
+          "quantity": 2
+        },
+        {
+          "id": "demo-cola",
+          "quantity": 1
+        },
+        {
+          "id": "demo-fries",
+          "quantity": 1
+        },
+        {
+          "id": "demo-spicy-chicken",
+          "quantity": 1
+        }
+      ],
+      "estimated_total_fen": 8050,
+      "estimated_within_budget": false,
+      "score": 200,
+      "unmet": [],
+      "extras": []
+    }
+  ],
+  "source": "demo",
+  "verified": false,
+  "evidence": {
+    "mode": "demo",
+    "note": "模拟演示数据，非实时门店价格；没有发起订单。"
+  }
+}

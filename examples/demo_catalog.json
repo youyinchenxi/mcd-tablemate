@@ -1,0 +1,43 @@
+{
+  "data_source": "synthetic_demo",
+  "notice": "模拟演示数据：餐品、门店、库存和价格均为虚构，不代表麦当劳真实菜单或报价。",
+  "store": {"id": "demo-store", "name": "模拟门店 · 麦桌演示站"},
+  "offers": [
+    {"id": "demo-chicken-set", "name": "模拟鸡肉套餐", "price_fen": 2400,
+     "components": [
+       {"name": "模拟鸡肉堡", "category": "main", "tags": ["鸡肉"], "quantity": 1},
+       {"name": "模拟可乐", "category": "drink", "tags": ["可乐", "冷饮"], "quantity": 1},
+       {"name": "模拟小薯条", "category": "side", "tags": ["薯条"], "quantity": 1}
+     ], "items": [{"id": "demo-chicken-set", "quantity": 1}], "max_quantity": 6},
+    {"id": "demo-coffee-set", "name": "模拟鸡肉咖啡套餐", "price_fen": 2700,
+     "components": [
+       {"name": "模拟鸡肉堡", "category": "main", "tags": ["鸡肉"], "quantity": 1},
+       {"name": "模拟美式咖啡", "category": "drink", "tags": ["咖啡", "热饮"], "quantity": 1},
+       {"name": "模拟小薯条", "category": "side", "tags": ["薯条"], "quantity": 1}
+     ], "items": [{"id": "demo-coffee-set", "quantity": 1}], "max_quantity": 6},
+    {"id": "demo-beef-set", "name": "模拟牛肉套餐", "price_fen": 2600,
+     "components": [
+       {"name": "模拟牛肉堡", "category": "main", "tags": ["牛肉"], "quantity": 1},
+       {"name": "模拟可乐", "category": "drink", "tags": ["可乐", "冷饮"], "quantity": 1},
+       {"name": "模拟小薯条", "category": "side", "tags": ["薯条"], "quantity": 1}
+     ], "items": [{"id": "demo-beef-set", "quantity": 1}], "max_quantity": 6},
+    {"id": "demo-spicy-chicken", "name": "模拟辣鸡肉堡", "price_fen": 1450,
+     "components": [{"name": "模拟辣鸡肉堡", "category": "main", "tags": ["鸡肉", "辣"], "quantity": 1}],
+     "items": [{"id": "demo-spicy-chicken", "quantity": 1}], "max_quantity": 6},
+    {"id": "demo-chicken", "name": "模拟鸡肉堡单点", "price_fen": 1600,
+     "components": [{"name": "模拟鸡肉堡", "category": "main", "tags": ["鸡肉"], "quantity": 1}],
+     "items": [{"id": "demo-chicken", "quantity": 1}], "max_quantity": 6},
+    {"id": "demo-beef", "name": "模拟牛肉堡单点", "price_fen": 1700,
+     "components": [{"name": "模拟牛肉堡", "category": "main", "tags": ["牛肉"], "quantity": 1}],
+     "items": [{"id": "demo-beef", "quantity": 1}], "max_quantity": 6},
+    {"id": "demo-cola", "name": "模拟可乐单点", "price_fen": 700,
+     "components": [{"name": "模拟可乐", "category": "drink", "tags": ["可乐", "冷饮"], "quantity": 1}],
+     "items": [{"id": "demo-cola", "quantity": 1}], "max_quantity": 6},
+    {"id": "demo-coffee", "name": "模拟美式咖啡单点", "price_fen": 950,
+     "components": [{"name": "模拟美式咖啡", "category": "drink", "tags": ["咖啡", "热饮"], "quantity": 1}],
+     "items": [{"id": "demo-coffee", "quantity": 1}], "max_quantity": 6},
+    {"id": "demo-fries", "name": "模拟小薯条单点", "price_fen": 800,
+     "components": [{"name": "模拟小薯条", "category": "side", "tags": ["薯条"], "quantity": 1}],
+     "items": [{"id": "demo-fries", "quantity": 1}], "max_quantity": 6}
+  ]
+}

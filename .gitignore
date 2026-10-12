@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.private/
+__pycache__/
+*.pyc
+.venv/
+artifacts/private/
+*.log
+artifacts/*.zip

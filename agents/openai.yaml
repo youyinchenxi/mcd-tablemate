@@ -1,0 +1,4 @@
+interface:
+  display_name: "麦桌搭子"
+  short_description: "协调多人需求、预算与麦当劳点餐清单"
+  default_prompt: "用 $mcd-tablemate 帮我们协调每个人的口味和总预算，生成并核验多人点餐方案。"
