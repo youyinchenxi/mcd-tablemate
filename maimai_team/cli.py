@@ -41,6 +41,12 @@ def make_parser():
     live.add_argument('--request', required=True)
     live.add_argument('--quote-template', required=True)
     live.add_argument('--out', default=str(PRIVATE / 'live-plan.json'))
+    normalize = commands.add_parser('prepare-live', help='按实测官方结构整理菜单、完整套餐与核价模板')
+    normalize.add_argument('--menu', required=True)
+    normalize.add_argument('--details', required=True, help='code到已解析详情payload的JSON映射')
+    normalize.add_argument('--profile', required=True, help='宿主已核对的组件分类与选配清单')
+    normalize.add_argument('--store', required=True, help='实际门店的id/name对象')
+    normalize.add_argument('--out-dir', default=str(PRIVATE))
     discover = commands.add_parser('discover', help='发现真实工具schema，保存到 .private/')
     discover.add_argument('--out', default=str(PRIVATE / 'tools.json'))
     call = commands.add_parser('call', help='按真实schema调用只读工具，保存原始响应')
@@ -109,6 +115,19 @@ def main(argv=None):
             print(f"核价结果：{result.get('status')}；预算内已核验方案 {len(result['candidates'])} 个。结果仅保存在 .private/。")
             if not result['candidates']:
                 return 2
+        elif args.command == 'prepare-live':
+            from .official import build_snapshot
+            from .live import payload
+            out = private_output(Path(args.out_dir) / 'catalog.json')
+            menu = read_json(args.menu)
+            if 'result' in menu:
+                menu = payload(menu['result'])
+            elif 'content' in menu or 'structuredContent' in menu:
+                menu = payload(menu)
+            catalog, template = build_snapshot(menu, read_json(args.details), read_json(args.profile), read_json(args.store))
+            write_json(out, catalog)
+            write_json(out.parent / 'quote-template.json', template)
+            print(f"已整理 {len(catalog['offers'])} 个完整选项与核价模板，保存于 .private/。价格仍需真实核价。")
         elif args.command == 'report':
             from .report import markdown
             target = Path(args.out)

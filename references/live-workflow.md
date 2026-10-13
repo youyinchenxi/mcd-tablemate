@@ -39,3 +39,26 @@ python -m maimai_team report --input .private/live-plan.json --out .private/meal
 ## 最小真实验收记录
 
 在实际凭证就绪后，至少完成一次门店/菜单/详情查询和两个候选的核价，再修改一个人的需求重新生成并核价。验证总预算、人员需求、套餐完整性及分摊合计。可以在 `artifacts/live-verification.md` 发布不含个人信息的摘要：日期、工具名称、成功/失败状态、用匿名人员的预算和价格结果、调用次数。不要发布门店位置、账号、券码、原始响应、Token或精确地址。未运行前不创建通过记录、不称已完成联调。
+
+## 官方响应整理
+
+2026-10-13实测官方到店取餐结构后，加入 `prepare-live`，减少手写购物车参数的工作：
+
+```sh
+python -m maimai_team prepare-live --menu .private/menu-response.json --details .private/details.json --profile .private/profile.json --store .private/store.json
+```
+
+menu接受已解析业务payload、MCP envelope或本项目call保存的result包装；details为code到已解析详情payload的映射；store为真实查询获得的`id/name`对象。profile结构如下，编码须替换为本次实际菜单编码：
+
+```json
+{
+  "components": {
+    "真实组件编码": {"category":"drink","tags":["咖啡"]}
+  },
+  "offers": [
+    {"code":"真实菜单编码","id":"local-variant","round_selections":{"2":[{"code":"真实组件编码","quantity":1}]}}
+  ]
+}
+```
+
+组件类别和标签由宿主先核对，未知组件会拒绝。round_selections可省略，默认读取详情中正的已选quantity；某些菜单会有多个isDefault=1且quantity=0，因此不能按标记全部计入。脚本保持每轮数量和上下限、保留默认特制，按选配与特制生成独立item身份；替换组件只从该轮真实choices中选择。差价估算仍不代表实付。第一版此整理器只支持到店自取，其他场景使用通用宿主流程并另行核验。
