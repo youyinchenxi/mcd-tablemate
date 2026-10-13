@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 def body(owner):
     if not re.fullmatch(r'[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?', owner):
         raise ValueError('请填写有效GitHub用户名。')
-    return (f'〖参赛申请〗\n'
+    return (f'【参赛申请】\n'
             f'项目名称：麦桌搭子 — 多人点餐协调员\n'
             f'项目地址：https://github.com/{owner}/mcd-tablemate\n'
             f'项目简介：面向2–6人的办公室午餐、宿舍聚餐和朋友点餐，协调每个人的主食、饮料、配餐、口味限制与整桌预算。'
